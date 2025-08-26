@@ -1,0 +1,163 @@
+* Representation Scheme:
+
+A method that tells us how to store information (e.g. numbers, addresses). 
+
+Example: Number representation
+
+------------------------------------------------------------------------------------------------------------------
+* Number Representation:
+
+As a set of rules for how numbers are interpreted and encoded.
+
+Example: Base systems
+
+------------------------------------------------------------------------------------------------------------------
+
+* Base/radix:
+
+A number system that defines the number of unique digits used to represent an integer.
+
+Examples of common base systems 
+
+1. Binary (Base-2) = 0,1
+2. Octal (Base-8) = 0,1,2,3,4,5,6,7,8
+3. Decimal (Base-10) = 0,1,2,3,4,5,6,7,8,9
+4. Hexadecimal (Base-16) = 0 - 9 and A-F, where A = 10 and F = 15, thus 10 - 15
+
+All of these are number systems.
+
+We index at 0 for each base system in order to account for the rightmost digit (one's place)  1 3 2 9 (Number)
+											      | | | | 
+For example, we have an integer 1329, the value 9 is the one's position which		      4 3 2 1(Place Value)
+corresponds to the 0th digit.								      | | | |
+											      3 2 1 0 (Digits)	
+
+--------------------------------------------------------------------------------------------------------------
+* Decimal (Base-10):
+
+Definition: A number system that represent any integer.
+
+Digits for base-10 system : 0,1,2,3,4,5,6,7,8,9
+
+How do we express the number 12 to base-10 digits -> "12" = (1 * 10^1) + (2 * 10^0) = 12
+
+We use power of 10 because we have 10 different distinct digits, 0,1,2,3,4,5,6,7,8,9. If you go past the 9th digit you will 
+get 10 * 10 = 1 0 0 which is more than a single digit, while 10 * 9 = 9 0 has a single digit.
+
+----------------------------------------------------------------------------------------------------------------
+* Binary (Base-2):
+
+Definition: A number system that represent two digits.
+
+Digits for base-2 system: 0 and 1.
+
+Different prefix to a binary: 0b, the binary itself, subscript 2.
+
+"0b0100" = (0 * 2^3) + (1 * 2^2) + (0 * 2^1) + (0 * 2^0) = 0 + 4 + 0 + 0 = 4 (Binary -> Decimal)
+
+What we did was convert binary to decimal using the power of 2 because we have 2 different distinct digits, 0,1.
+In binary, each digit can only be 0 or 1. After 1 (0b0001), you roll over to the next place value, just like 
+in decimal after 9 you roll over to 10. For example, decimal 2 is 0b0010, and decimal 4 is 0b0100. Binary is not 
+limited to only 0 (0b0000) and 1 (0b0001) — larger numbers are represented by adding more binary digits.
+
+Bits represent information using two digits, 0 and 1, which comes from the binary system (binary digit -> bits).
+
+A single bit can represent anything, for example, 0 = False and 1 = True.
+
+Example: Count the number of bits found in  "0b1010".
+-> The binary 0b1010 has four bits, 1 0 1 0 = 4 bits, just count the total number of binary digits. 
+
+--------------------------------------------------------------------------------------------------------------------
+* More on Bits
+
+There are a couple of common bit formats used to store information.
+1. A nibble = 4 bits 
+2. A byte = 8 bits
+3. A two byte = 16 bits
+4. A four byte = 32 bits
+
+2^n where n is the number of bits, tell us the total number of different values that can be represented with n bits.
+
+Example: We want to represent a decimal using 4 bits.
+-> We use 2^n, where 2^4 = 16 the total number of different values you can use. For example, if you want to 
+represent the decimal value 13 in binary, we can use 4 bits. However if you try to do 16 or higher, you run out of 
+bits. 
+
+A way of proving this is using 2^n -1, it tells us the max integer value you can represent with n bits.
+Example: Let's say we have 4 bits, what is the max decimal value we can represent it using only 4 bits?
+-> Using 2^n - 1 = 2^4 -1 = 16 - 1 = 15. Thus the max number value we can use for a 4 bit binary representation is 
+15.
+
+2^(n-1) tells us the leftmost bit, aka the significant bit. This is called a significant bit because it gives us 
+a range of numbers that can be represented given a n bit, the leftmost bit is 2^(n-1).
+Example: What is the range of numbers used for a 4 bit binary representation of a decimal value?
+-> Using 2^(n-1) = 2^(4-1) = 2^3 = 8, so the significant bit is 2^3 = 8, in the 4th position.
+
+--------------------------------------------------------------------------------------------------------------------
+* Examples of Binary and Decimal
+
+Binary to Decimal
+
+1.)
+
+ 0b1100 1011 -> 8 bits, so the leftmost bit is 2^(8-1) =
+2^7 = 128. -> The total number of different values that we 
+can represent with 8 bits is 2^8 = 256 -> The max decimal 
+value we can represent with 8 bits is 2^n - 1 = 2^8 - 1 = 255.
+
+So we start with 2^7 leftmost going down
+2^7 = 128 (1)
+2^6 = 64 (1)
+2^5 = 32 (0)
+2^4 = 16 (0)             =0b1100 1011 = 128+64+8+2+1 = 203
+2^3 = 8 (1)
+2^2 = 4 (0)
+2^1 = 2 (1)
+2^0 = 1 (1)
+
+So, 0b1100 1011 = 203
+
+2.)
+
+0b0011 1111
+128 (0)
+64 (0)
+32 (1)
+16 (1)		= 0b0011 1111 = 32+16+8+4+2+1 = 63
+8 (1)
+4 (1)
+2 (1)
+1 (1)
+
+Decimal to Binary
+
+1.
+
+143 to binary, lets represent this decimal using 8 bits, so 2^(8-1) = 2^7 = 128
+
+128 (1)
+64 (0)
+32 (0) 
+16 (0)         = 143 = 0b1000 1111
+8 (1)
+4 (1)
+2 (1)
+1 (1)
+
+2. 
+
+3.14 to binary, lets represent this decimal using 4 bits, so 2^(4-1) = 2^3 = 8
+
+First find the binary of 3
+8 (0)
+4 (0)
+2 (1)		= 3 = 0b0011
+1 (1)
+
+Then find the binary of 14
+8 (1)
+4 (1)
+2 (1)		= 14 = 0b1110
+1 (0)
+
+
