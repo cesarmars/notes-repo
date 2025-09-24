@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  12 SEP 2025 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  24 SEP 2025 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,7 +137,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box57
 )
-No file note1_numRep.aux.
+(./note1_numRep.aux)
 \openout1 = `note1_numRep.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -319,29 +319,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--443
 
 
 [7]
-Overfull \hbox (146.27892pt too wide) in paragraph at lines 447--455
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
  []
 
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
 
-Overfull \hbox (1.94304pt too wide) detected at line 512
+Overfull \hbox (1.94304pt too wide) detected at line 508
 \OML/cmm/m/it/10 Max \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 value \OT1/cmr/m/n/10 +
  \OML/cmm/m/it/10 bias \OT1/cmr/m/n/10 = (2[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n
 /10 1) + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr
@@ -350,39 +345,49 @@ Overfull \hbox (1.94304pt too wide) detected at line 512
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--528
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 544--546
+Underfull \hbox (badness 10000) in paragraph at lines 540--542
 
  []
 
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 553--555
+Underfull \hbox (badness 10000) in paragraph at lines 549--551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
 
@@ -417,24 +422,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--567
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+Underfull \hbox (badness 10000) in paragraph at lines 592--593
 
  []
 
 
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
 
  []
 
@@ -444,54 +449,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 619--620
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--622
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 625--627
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
 
 
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--680
+Underfull \hbox (badness 10000) in paragraph at lines 672--676
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--683
+Underfull \hbox (badness 10000) in paragraph at lines 677--679
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--693
+Underfull \hbox (badness 10000) in paragraph at lines 687--689
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--711
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
 
  []
 
@@ -506,10 +501,10 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2933 strings out of 473190
- 44428 string characters out of 5715801
- 446835 words of memory out of 5000000
- 26215 multiletter control sequences out of 15000+600000
+ 2936 strings out of 473190
+ 44491 string characters out of 5715801
+ 446828 words of memory out of 5000000
+ 26216 multiletter control sequences out of 15000+600000
  565767 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,8n,65p,229b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -526,7 +521,7 @@ exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on note1_numRep.pdf (13 pages, 179801 bytes).
+Output written on note1_numRep.pdf (13 pages, 179397 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
