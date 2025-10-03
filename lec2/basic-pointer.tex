@@ -3,9 +3,9 @@
 \usepackage{listing}
 \usepackage{enumitem}
 
-\title{Basics, Pointers, and Arrays}
-\author{}
-\date{}
+\title{C Basics}
+\author{CS61C Note 2}
+\date{Cesar}
 
 \begin{document}
 
@@ -107,7 +107,7 @@ We have different C types:
 
 
 \subsection*{Declaring C variables}
-In C programming, variables are not automatically declared and intialized for you. So, to declare a variable you: 
+In C programming, variables are not automatically declared and intialized for you. So, to declare and initialize a variable you: 
 
 \begin{verbatim}
 #include <stdio.h>
@@ -119,20 +119,66 @@ int main(){
 }
 \end{verbatim}
 
-\noindent This is also okay for declaring variables 
+\noindent This is also okay and faster for declaring variables 
 
 \begin{verbatim}
-int x = 20; // okay
+int x = 20; // faster (declaration + initialization)
 \end{verbatim} 
 
-\noindent C variables are typed, meaning you cant type specify condition for variable. For example, if I want to declare a unsigned integer that stores a
-value uses only 16 bits, I can type: 
+\noindent C variables are typed, meaning you can type a specific condition for a variable. For example, if I want to declare a unsigned integer that stores a
+value using only 16 bits, I can type: 
 
 \begin{verbatim}
 uint16_t z = 38;
 \end{verbatim}
 
-So, the unsigned value 38 will be stored using 2 bytes.
+So, the unsigned value 38 will be stored using 2 bytes. However this comes from the library $<stdint.h>$, that makes integers already have this specific
+condition.
+
+\subsection*{More C Features}
+\textbf{constant:} We can have variables that don't change after initializing, using the keyword const (constant) that is assigned to a type value. 
+That value can not be altered during the entire execution of a program. \\
+
+\begin{verbatim}
+
+int main() {
+	const char name[] = "Cedar"; // can not be modified after initializing 
+	*name = 'L'; // trying to replace 'C' for 'L' ERROR
+	printf("First letter of the string %c\n", *name);
+	return 0;
+}
+
+\end{verbatim}
+
+In this example, after initializing the (const) keyword, you are no longer able to edit the orignal type value. So this snippet will return an error
+because of the constant assigned to the type char. \\
+
+\noindent \textbf{sizeof:} A compile-time operator that measures the size of a type/variable in bytes. Does not work for functions because sizeof only 
+works for expressions, types and variables.
+
+\begin{verbatim}
+
+int main() {
+	int num = 100;
+	long z = 9;
+	double pi = 3.14;
+	printf("Using sizeof operator for variables num, z, and pi: 
+			%lu bytes, %lu bytes, %lu\n bytes", 
+			sizeof(num), sizeof(z), sizeof(pi));
+	return 0;
+}
+
+\end{verbatim}
+
+We have three different variables with three different types. Each type has its own byte size, for example, sizeof(num) will print 2 bytes, sizeof(z) 8 bytes
+and sizeof(pi) 4 bytes. The sizeof operator looks at the type associated with the variable. 
+
+
+\begin{verbatim}
+\end{verbatim}
+
+
+
 
 \section{struct and typedef Type}
 \subsection*{struct}
@@ -198,6 +244,31 @@ int main() {
 }
 \end{verbatim}
 
+\noindent Because struct is a declaration for a new type, we can use the sizeof operator to measure the size of its variables. For example, 
+
+\begin{verbatim}
+
+#include <stdio.h>
+#include <string.h>
+struct Demo {
+	int z; // -> sizeof(int) = 4 bytes
+	long x; // -> sizeof(long) = 8 bytes
+	char y[30]; // -> sizeof(char) = 1 byte * 30
+	float pi; // -> sizeof(4 bytes)
+};
+
+int main() {
+	struct Demo trial = {2010, 3, "hello world", 3.14};
+	// sizeof the total amount of variables = 50 bytes
+	printf("Using sizeof on the new type structg Demo: %lu\n", sizeof(trial));
+	return 0;
+}
+
+\end{verbatim}
+
+However, you can not initialize the variables inside the struct because C treats struct as a declaration, which is why we have a semi-colon at the end
+of the struct.
+
 \subsection*{typedef}
 typedef is a keyword that allows us to define a type using an alias to an existing type. The main difference is struct creates a new type and typedef
 makes a nickname to an exisiting type. \\
@@ -214,7 +285,7 @@ int main() {
 \end{verbatim}
 
 We used the keyword typedef followed by the exisiting type double then we assign a nickname associated 
-with the existing type double. Thus, the keyword (dd) becomes a nickname to double. \\
+with the existing type double. Thus, the keyword (dd) becomes an alias to double. \\
 
 \noindent Additionally we can combine struct and typedef to simplify its call when passing arguments. 
 Here is an example
@@ -232,6 +303,8 @@ int main() {
 	return 0;
 }
 \end{verbatim}
+
+
 
 
 
