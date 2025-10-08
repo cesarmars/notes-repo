@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{enumitem}
+\usepackage{xcolor}
 
 \title{Number Representation Notes}
 \author{CS61C Note 1}
@@ -14,14 +15,12 @@
 \section{Representation Scheme}
 \textit{Representation Scheme:} A method that tells us how to store information (e.g., numbers, addresses). \\
 
-\noindent \textbf{Example:} Number representation
+\noindent \textbf{Example:} Number representation 
 
-\section{Number Representation}
 \textit{Number Representation:} A set of rules for how numbers are interpreted and encoded. \\
 
 \noindent \textbf{Example:} Base systems
 
-\section{Base / Radix}
 \textit{Base:} A number system that defines the number of unique digits used to represent an integer. \\
 
 \subsection*{Examples of Common Base Systems}
@@ -34,13 +33,13 @@
 
 \noindent All of these are number systems. \\
 
-\noindent We typically index digits starting from 0, with the rightmost digit (the one's place) being position 0.
+\noindent We index starting from $0$ meaning $10^0$ beginning from the rightmost (the one's place).
 
 \begin{center}
 \begin{tabular}{c c c c c}
 Number Value: & 1 & 3 & 2 & 9 \\
 Place Value:  & thousand's & hundred's & ten's & one's \\
-Digit Index:  & $10^3$ & $10^2$ & $10^1$ & $10^0$ \\
+Power of 10 Index:  & $10^3$ & $10^2$ & $10^1$ & $10^0$ \\
 \end{tabular}
 \end{center}
 
@@ -49,7 +48,7 @@ Digit Index:  & $10^3$ & $10^2$ & $10^1$ & $10^0$ \\
 \begin{tabular}{c c c c c}
 Number Value: & 1 & 0 . & 2 & 9 \\
 Place Value:  & ten's & one's & tenth's & hundredth's \\
-Digit Index:  & $10^1$ & $10^0$ & $10^{-1}$ & $10^{-2}$ \\
+Power of 10 Index:  & $10^1$ & $10^0$ & $10^{-1}$ & $10^{-2}$ \\
 \end{tabular}
 \end{center}
 
@@ -61,15 +60,35 @@ Digit Index:  & $10^1$ & $10^0$ & $10^{-1}$ & $10^{-2}$ \\
 
 \noindent Digits for base-10 system: 0--9 \\
 
-\textbf{Example:}
+\textbf{Example:} When we write
 \[
-12 = (1 \times 10^1) + (2 \times 10^0) = 12
+6 = (6 \times 10^0) = 6 
 \]
 
-We use powers of 10 because there are 10 distinct digits. After 9, we roll over to the next place value:  
+we are showing how the decimal value 6 can be represented using the base-10 system. We use powers of 10 to multiply because there are 10 distinct numbers. In this 
+example, the digit 6 is in the one's place falling in the range of 0-9. After the 9 digit, we roll over to the next place value:  
 \[
-9 \to 10, \quad 10 \times 10 = 100
+9 \to 10
 \]
+
+\noindent Meaning you roll over to the ten's place in the number 10. It will roll over to 10-99 digits until the value reaches a new roll over of 100-999 digits, etc. \\
+
+\begin{center}
+\begin{tabular}{c c c}
+Number: & 1 & 0 \\
+Place value: & ten's & one's \\
+Power of 10 index: & 10$^1$ &  10$^0$ \\
+\end{tabular}
+\end{center}
+
+\noindent Here is a number that rolls over the digits 0-9
+\[
+15 = (1 \times 10^1) + (5 \times 10^0) = 15
+\]
+
+The digit 15 falls between 10-99 digits. 
+
+
 
 \section{Binary (Base-2)}
 \textit{Binary:} A positional number system that represents two digits. \\
@@ -78,33 +97,45 @@ We use powers of 10 because there are 10 distinct digits. After 9, we roll over 
 
 \noindent Binary prefixes: \texttt{0b}, subscript 2, or just binary digits. \\
 
-\textbf{Example:}
+\textbf{Example:} We have 0b0100 \\
+
+\begin{center}
+\begin{tabular}{c c c c c} 
+Binary Values: & 0 & 1 & 0 & 0 \\
+Power of 2 Index:  & $2^3$ & $2^2$ & $2^1$ & $2^0$ \\
+\end{tabular}
+\end{center} 
+
 \[
-0b0100 = (0 \times 2^3) + (1 \times 2^2) + (0 \times 2^1) + (0 \times 2^0) = 4
+= (0 \times 2^3) + (1 \times 2^2) + (0 \times 2^1) + (0 \times 2^0) = 4
 \]
 
-Binary rolls over after 1, just like decimal rolls over after 9.  
+Binary rolls over after 1, just like decimal rolls over after 9. \\
 \[
-\text{Decimal 2 = 0b0010, Decimal 4 = 0b0100}
+0b0, \text{\colorbox{red}{0b1}}, 0b10, \text{\colorbox{red}{0b11}}, 0b100, 0b101, 0b110, \text{\colorbox{red}{0b111}}, 0b1000
 \]
 
+After the binary 0b1, it rolls over to 0b10, because there is a binary digit of 1 at the one's place with no zero's. Similar, after 0b11, we roll over to 0b100, because
+we have a binary digit of 1 at the one's and two's place with no zero's, etc.
+
+
+\section{Storing Information: Bits}
 \noindent A \textbf{bit} is a binary digit (0 or 1). A single bit can represent anything, e.g., 0 = False, 1 = True. \\
 
 \textbf{Example:}  
 The binary \texttt{0b1010} has 4 bits, it is just the total number of 0's and 1's.
 
-\section{More on Bits}
 Common groupings:
 \begin{itemize}
-  \item Nibble = 4 bits
-  \item Byte = 8 bits
-  \item 2 Bytes = 16 bits
-  \item 4 Bytes = 32 bits
+  \item Nibble = 4 bits = 0b1000
+  \item Byte = 8 bits = 0b1000 0000
+  \item 2 Bytes = 16 bits = 0b1000 0000 0000 0000
+  \item 4 Bytes = 32 bits = 0b1000 0000 0000 0000 0000 0000 0000 0000 
 \end{itemize}
 
 \subsection*{Formulas}
 \[
-2^n = \text{Total number of values representable with $n$ bits}
+2^n = \text{Total number of combination values of 0 and 1 representable with $n$ bits}
 \]
 \[
 2^n - 1 = \text{Maximum decimal value with $n$ bits}
@@ -113,16 +144,28 @@ Common groupings:
 2^{(n-1)} = \text{Value of the leftmost (most significant) bit}
 \] \\
 
-\textbf{Example:} With 4 bits:  
+\textbf{Example 1:} With 4 bits:  
 \[
-2^4 = 16 \quad \Rightarrow \quad \text{16 values total}
+2^4 = 16 \quad \Rightarrow \quad \text{16 total combinations of 0 and 1, example 0b0000, 0b0001, .....0b1111}
 \]
 \[
-2^4 - 1 = 15 \quad \Rightarrow \quad \text{Max decimal value = 15}
+2^4 - 1 = 15 \quad \Rightarrow \quad \text{Max decimal value = 15 representable with 4 bits}
 \]
 \[
-2^{(4-1)} = 2^3 = 8 \quad \Rightarrow \quad \text{Significant bit value = 8}
+2^{(4-1)} = 2^3 = 8 \quad \Rightarrow \quad \text{Significant bit value = 8 = 0b1000}
 \]
+
+\textbf{Example 2:} With 8 bits:
+\[
+2^8 = 256
+\]
+\[	
+2^8 - 1 = 255
+\]
+\[
+2^{(8-1)} = 128
+\]
+
 \section{Examples of Binary and Decimal}
 
 \subsection*{Binary to Decimal}
@@ -470,11 +513,11 @@ of bits.
 \noindent General formulas for bias
 
 \[
-Signed: value = stored(signed) - bias
+Signed: value(min) = stored(signed) - bias
 \]
 
 \[
-Unsigned: stored = value(unsigned)  + bias
+Unsigned: stored(max) = value(unsigned)  + bias
 \]
 
 \noindent Bias is stated as 
@@ -483,7 +526,14 @@ Unsigned: stored = value(unsigned)  + bias
 Bias = 2^{n-1} - 1
 \]
 
-\noindent \textbf{Ranges:} We can find the ranges for a given bit size. \\
+\noindent \textbf{Ranges:} We can find the ranges for a given bit size using  \\
+
+\[
+[-(2^{n-1} - 1), 2^{n-1}] 
+\]
+
+\noindent Where $-(2^{n-1} - 1)$ is our signed value aka min and $2^{n-1}$ is our unsigned value aka max. \\
+	
 
 \noindent For example, a 4 bit representation value range is:
 
