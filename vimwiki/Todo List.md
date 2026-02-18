@@ -78,6 +78,12 @@ Forgot but I was somewhat productive.
 
 # November 17, 2025
 
-
+# Feb 17
+- [] wake up @ 8am
+- [] finish reviewing hw
+- [] finish half of the hw by 12
+- [] review floating points and generics hard
+- [] look over project
+ 
 
 
