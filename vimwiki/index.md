@@ -10,3 +10,5 @@
 
 [browsing shortcuts](browsing shortcuts)
 
+[escape plan](plan)
+

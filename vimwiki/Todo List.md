@@ -85,5 +85,7 @@ Forgot but I was somewhat productive.
 - [] review floating points and generics hard
 - [] look over project
  
-
+# Feb 22 
+- [] wake up @ 7:30 am
+- [] 
 
