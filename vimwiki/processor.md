@@ -18,8 +18,14 @@ their registers, instructional operations, how memory is accessed and how instru
 
 # Instructional Set Architecture (ISA)
 
+Intructional Set Architecture is how software interfaces with hardware through defined registers, memory model, data types,
+and instructions. There is two major ISA's, Complex Instruction Set Computer (CISC), and Reduced Instructional 
+Set Computer (RISC-V)
 
+Different CPU's implement different ISA's
 
-
+x86 = Intel and AMD processors (CISC)
+ARM = Apple silicon series 
+RISC-V = embedded systems, etc
 
 
