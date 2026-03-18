@@ -26,6 +26,6 @@ Different CPU's implement different ISA's
 
 x86 = Intel and AMD processors (CISC)
 ARM = Apple silicon series 
-RISC-V = embedded systems, etc
+RISC-V = embedded systems, consoles, cellphone etc.
 
 
