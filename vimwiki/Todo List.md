@@ -84,6 +84,15 @@ Forgot but I was somewhat productive.
 - [] finish half of the hw by 12
 - [] review floating points and generics hard
 - [] look over project
+<<<<<<< HEAD
 - lab 4 due 24 
 
+=======
+>>>>>>> 7a5240040a83f63d2e06fc0015452da211b969b5
 
+# Mar 17 
+- [] wake up @ 8am
+- [] walk in the morning
+- [] attend lecture
+- [] work on proj and discussion
+- [] study past content
