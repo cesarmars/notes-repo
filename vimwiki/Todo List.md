@@ -96,3 +96,13 @@ Forgot but I was somewhat productive.
 - [] attend lecture
 - [] work on proj and discussion
 - [] study past content
+
+# Mar 23
+- [] wake up early
+- [] start note taking
+- [] redo hw's
+- [] look at proj B
+- [] more note taking
+- [] redo some discussion
+- [] execirse
+  
