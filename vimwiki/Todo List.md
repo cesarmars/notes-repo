@@ -98,11 +98,17 @@ Forgot but I was somewhat productive.
 - [] study past content
 
 # Mar 23
+- [x] wake up early
+- [x] start note taking
+- [-] redo hw's
+- [-] look at proj B
+- [x] more note taking
+- [-] redo some discussion
+- [-] execirse
+
+# Mar 24
 - [] wake up early
-- [] start note taking
-- [] redo hw's
-- [] look at proj B
-- [] more note taking
-- [] redo some discussion
-- [] execirse
-  
+- [] finish some labs
+- [] take notes
+- [] exercise
+- [] look over projB
