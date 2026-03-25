@@ -107,8 +107,8 @@ Forgot but I was somewhat productive.
 - [-] execirse
 
 # Mar 24
-- [] wake up early
-- [] finish some labs
-- [] take notes
-- [] exercise
-- [] look over projB
+- [-] wake up early
+- [-] finish some labs
+- [-] take notes
+- [x] exercise
+- [-] look over projB
