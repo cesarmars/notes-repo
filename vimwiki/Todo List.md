@@ -114,7 +114,14 @@ Forgot but I was somewhat productive.
 - [-] look over projB
 
 # Mar 25
-- [] adventureA
-- [] walk in the morning
-- [] shower
+- [x] adventureA
+- [x] walk in the morning
+- [x] shower
+
+# Mar 26 
+- [] work on important doc
+- [] study
+- [] exercise
+- [] study more
+  
   
