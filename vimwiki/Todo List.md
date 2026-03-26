@@ -112,3 +112,9 @@ Forgot but I was somewhat productive.
 - [-] take notes
 - [x] exercise
 - [-] look over projB
+
+# Mar 25
+- [] adventureA
+- [] walk in the morning
+- [] shower
+  
