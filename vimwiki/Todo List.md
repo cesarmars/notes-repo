@@ -119,9 +119,16 @@ Forgot but I was somewhat productive.
 - [x] shower
 
 # Mar 26 
-- [] work on important doc
-- [] study
-- [] exercise
-- [] study more
+- [x] work on important doc
+- [x] study
+- [x] exercise
+- [x] study more
+
+# Mar 27
+- [] finish state notes in the morning before 1pm
+- [] finish hw5 redo
+- [] finish or almost be done with important doc
+- [] finish logic blocks notes before 8pm
+
   
   
