@@ -130,5 +130,9 @@ Forgot but I was somewhat productive.
 - [x] finish or almost be done with important doc
 - [x] finish logic blocks notes before 8pm
 
-  
+ # Mar 28 
+ - [] finish lecture combination logic by 1pm
+ - [] finish hw 5 redo
+ - [] start hw 6
+ - [] prep for something  
   
