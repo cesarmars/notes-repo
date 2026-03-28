@@ -125,10 +125,10 @@ Forgot but I was somewhat productive.
 - [x] study more
 
 # Mar 27
-- [] finish state notes in the morning before 1pm
-- [] finish hw5 redo
-- [] finish or almost be done with important doc
-- [] finish logic blocks notes before 8pm
+- [x] finish state notes in the morning before 1pm
+- [-] finish hw5 redo
+- [x] finish or almost be done with important doc
+- [x] finish logic blocks notes before 8pm
 
   
   
