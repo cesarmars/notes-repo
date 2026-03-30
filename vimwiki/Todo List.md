@@ -135,4 +135,11 @@ Forgot but I was somewhat productive.
  - [] finish hw 5 redo
  - [] start hw 6
  - [] prep for something  
+   
+# Mar 30 
+- [] finish worksheet 7 before lecture starts
+- [] start hw 6
+- [] look over proj B
+- [] study/note take 
+- [] look over midterm sol.
   
