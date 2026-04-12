@@ -11,9 +11,11 @@
 
 git branch -> name of the branch main or master
 
-git branch -m main master (or) git branch -m master main -> to alternate between two branches or create.
+git branch -m main master (main to master) or git branch -m master main (master to main) -> to alternate between two branches or create.
 
-git branch -d main/master, to delete one branch
+git branch -d main/master, to delete a branch locally(Terminal)
+
+git push origin --delete master/main, to delete a branch remotely(GitHub)
 
 
 A branch points to the latest commit in its history.
