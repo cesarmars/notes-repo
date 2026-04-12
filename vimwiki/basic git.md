@@ -1,13 +1,10 @@
 # Staging git environment 
-1. git init = initalize git
+1. git init = initalize git (.git)
 2. git remote add origin http url or git remote add origin ssh url
 3. git add . or git add file.txt = stage your file
 4. git commit -m "message here" = snapshots the staged files into the repo history, with a message.
-5. git push origin main --force
-6. git pull origin main --allow-unrelated-histories
-7. git push origin main.
-
-
+5. git push = push changes to github repo
+6. git push/origin main --force
 
 git branch -> name of the branch main or master
 
@@ -17,10 +14,8 @@ git branch -d main/master, to delete a branch locally(Terminal)
 
 git push origin --delete master/main, to delete a branch remotely(GitHub)
 
-
 A branch points to the latest commit in its history.
 branch name -> main or master
-
 
 # Changing git repo name
 After changing name in github setting do,
