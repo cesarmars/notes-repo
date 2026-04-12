@@ -125,7 +125,6 @@ Forgot but I was somewhat productive.
 - [x] study more
 
 # Mar 27
-<<<<<<< HEAD
 - [x] finish state notes in the morning before 1pm
 - [-] finish hw5 redo
 - [x] finish or almost be done with important doc
@@ -136,12 +135,11 @@ Forgot but I was somewhat productive.
  - [] finish hw 5 redo
  - [] start hw 6
  - [] prep for something  
-<<<<<<< HEAD
    
-# Mar 30 
-- [] finish worksheet 7 before lecture starts
-- [] start hw 6
-- [] look over proj B
-- [] study/note take 
-- [] look over midterm sol.
+# April 12
+- [] Finish parallism notes
+- [] look over risc worksheets
+- [] start lab
+- [] start hw
+- [] look over midterm sol 
   
