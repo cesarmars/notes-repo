@@ -17,3 +17,6 @@ command + shift + left arrow = highlights line
 shift + left arros = highlights single characters
 
 command + alt + left arrow = highlight a word
+
+setsid application_name_here &>/dev/null & 
+
