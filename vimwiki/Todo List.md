@@ -136,10 +136,10 @@ Forgot but I was somewhat productive.
  - [] start hw 6
  - [] prep for something  
    
-# April 12
-- [] Finish parallism notes
-- [] look over risc worksheets
-- [] start lab
-- [] start hw
-- [] look over midterm sol 
+# April 14
+- [] Finish two RISC-V lectures: data transfer and decision making
+- [] finish risc-v worksheet basic
+- [] start lab due thursday
+- [] finish or start hw 
+- [] complete half of parallelism worksheet
   
