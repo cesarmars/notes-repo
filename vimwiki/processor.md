@@ -16,6 +16,8 @@ general purpose instructions at given time.
 CPU's are designed around an instructional set architecture (ISA). ISA are hardwired to a specific blueprint that define 
 their registers, instructional operations, how memory is accessed and how instructions encode binaries.
 
+# Parallelism
+
 # Instructional Set Architecture (ISA)
 
 Intructional Set Architecture is how software interfaces with hardware through defined registers, memory model, data types,
